@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -11,6 +12,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core-ui" />
+            <option value="$PROJECT_DIR$/core-ui/screens" />
+            <option value="$PROJECT_DIR$/core-ui/screens/auth" />
+            <option value="$PROJECT_DIR$/core-ui/screens/auth/loginn-register" />
+            <option value="$PROJECT_DIR$/core-ui/screens/auth/welcome" />
+            <option value="$PROJECT_DIR$/core-ui/screens/main" />
             <option value="$PROJECT_DIR$/domain" />
             <option value="$PROJECT_DIR$/features" />
           </set>

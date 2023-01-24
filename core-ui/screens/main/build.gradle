@@ -2,16 +2,13 @@ plugins {
     alias libs.plugins.android.application
     alias libs.plugins.kotlin.android
 }
-def localPropertiesFile = rootProject.file("local.properties")
-def localProperties = new Properties()
-localProperties.load(new FileInputStream(localPropertiesFile))
 
 android {
-    namespace 'com.odogwudev.example.cinephilescompanion'
+    namespace 'com.odogwudev.example.main'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.odogwudev.example.cinephilescompanion"
+        applicationId "com.odogwudev.example.main"
         minSdk 30
         targetSdk 33
         versionCode 1
@@ -20,33 +17,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        release {
-            storeFile file("release.keystore")
-            keyAlias = "Cinephile"
-            keyPassword = "android"
-            storePassword = "android"
-        }
-    }
-
     buildTypes {
-        debug {
-            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
-            buildConfigField "String", "API_KEY", localProperties['apiKey']
-            buildConfigField("String", "CLIENT_ID", "\"mova-mobile-client\"")
-        }
-
         release {
-            minifyEnabled true
-            shrinkResources true
-            zipAlignEnabled true
-
-            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
-            buildConfigField "String", "API_KEY", localProperties['apiKey']
-            buildConfigField("String", "CLIENT_ID", "\"mova-mobile-client\"")
-
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
         }
     }
     compileOptions {
@@ -56,18 +30,8 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion libs.versions.androidx.composeCompiler.get()
-    }
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
-        }
-    }
 }
+
 
 dependencies {
 
