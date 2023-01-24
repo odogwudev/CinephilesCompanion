@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="more_popular_movies">More Popular Movies</string>
+    <string name="popular_people">Popular People</string>
+    <string name="more_popular_people">More Popular People</string>
+    <string name="now_playing_movies">Now Playing Movies</string>
+    <string name="more_now_playing_movies">More Now Playing Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="more_top_rated_movies">More Top Rated Movies</string>
+
+    <string name="all_content">All Content</string>
+
+    <string name="snackbar_error_message">Sorry, an error occurred.</string>
+    <string name="snackbar_action_label">Try again</string>
+
+    <string name="featured_movies">Featured Movies</string>
+    <string name="more_featured_movies">More Featured Movies</string>
+    <string name="celebrities">Celebrities</string>
+    <string name="more_celebrities">More Celebrities</string>
+    <string name="current_releases">Current Releases</string>
+    <string name="more_current_releases">More Current Releases</string>
+    <string name="highest_rated_movies">Highest Rated Movies</string>
+    <string name="more_highest_rated_movies">More Highest Rated Movies</string>
+
+</resources>
