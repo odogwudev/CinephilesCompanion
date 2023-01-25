@@ -5,12 +5,18 @@ pluginManagement {
         mavenCentral()
     }
 }
+
 dependencyResolutionManagement {
     enableFeaturePreview("VERSION_CATALOGS")
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-
-
+        maven {
+            url = uri("https://maven.pkg.github.com/halcyonmobile/*")
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
@@ -28,3 +34,10 @@ include ':core-ui:screens:auth:loginn-register'
 include ':core-ui:screens:auth:welcome'
 include ':core-ui:theme'
 include ':core-ui:utils'
+include ':features:explore'
+include ':features:models'
+include ':features:models:movie'
+include ':features:networking'
+include ':features:networking:network-api'
+include ':features:networking:networking-di'
+include ':features:networking:network-implementation'

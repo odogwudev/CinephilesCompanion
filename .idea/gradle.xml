@@ -21,6 +21,13 @@
             <option value="$PROJECT_DIR$/core-ui/utils" />
             <option value="$PROJECT_DIR$/domain" />
             <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/explore" />
+            <option value="$PROJECT_DIR$/features/models" />
+            <option value="$PROJECT_DIR$/features/models/movie" />
+            <option value="$PROJECT_DIR$/features/networking" />
+            <option value="$PROJECT_DIR$/features/networking/network-api" />
+            <option value="$PROJECT_DIR$/features/networking/network-implementation" />
+            <option value="$PROJECT_DIR$/features/networking/networking-di" />
           </set>
         </option>
       </GradleProjectSettings>
