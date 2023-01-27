@@ -1,0 +1,37 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'maven-publish'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api project(':oauthparsing')
+    api "com.squareup.moshi:moshi:$moshiVersion"
+    api("com.squareup.retrofit2:converter-moshi:$retrofitVersion") {
+        exclude module: 'okhttp'
+        exclude module: 'moshi'
+    }
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$okHttpVersion"
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = project.jvmTarget
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = project.jvmTarget
+    }
+}
+
+project.ext.set("libraryArtifactId", "oauth-setup-moshi")
+apply plugin: 'com.halcyonmobile.plugin.publish.custom.jar-library'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8

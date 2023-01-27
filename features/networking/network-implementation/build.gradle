@@ -12,10 +12,6 @@ dependencies {
     implementation(libs.square.retrofit)
     implementation(libs.koin.core)
     implementation(libs.square.moshi)
-    implementation(libs.halcyon.oauthMoshi)
-    implementation(libs.halcyon.oauthStorage)
-    implementation(libs.halcyon.oauthDependencies)
-
     implementation(project(":features:networking:network-api"))
 
 }

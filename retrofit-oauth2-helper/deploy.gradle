@@ -1,0 +1,6 @@
+// RELEASING
+// ./gradlew howToPublish
+
+ext.libraryGroupId = 'oauth-setup'
+ext.libraryVersion = '1.0.3'
+ext.githubPackagePath = 'halcyonmobile/retrofit-oauth2-helper'
