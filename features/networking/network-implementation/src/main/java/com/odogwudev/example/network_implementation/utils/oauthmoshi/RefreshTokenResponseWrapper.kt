@@ -16,7 +16,7 @@
  */
 package com.odogwudev.example.network_implementation.utils.oauthmoshi
 
-import com.halcyonmobile.oauth.SessionDataResponse
+import com.odogwudev.example.network_implementation.utils.oauth.SessionDataResponse
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.JsonWriter

@@ -26,7 +26,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Cinephile's Companion"
 include ':app'
-include ':retrofit-oauth2-helper'
 include ':core-ui'
 include ':features'
 include ':domain'

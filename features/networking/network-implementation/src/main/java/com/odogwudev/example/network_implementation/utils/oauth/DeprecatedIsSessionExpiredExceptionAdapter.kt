@@ -1,6 +1,6 @@
 package com.odogwudev.example.network_implementation.utils.oauth
 
-import com.halcyonmobile.oauth.IsSessionExpiredException as DeprecatedIsSessionExpiredException
+import com.odogwudev.example.network_implementation.utils.oauth.IsSessionExpiredException as DeprecatedIsSessionExpiredException
 import com.halcyonmobile.oauth.dependencies.IsSessionExpiredException
 
 @Deprecated("Only needed as long as com.halcyonmobile.oauth.IsSessionExpiredException] is kept.", level = DeprecationLevel.WARNING)

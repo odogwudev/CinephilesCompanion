@@ -16,8 +16,6 @@
  */
 package com.odogwudev.example.network_implementation.utils.oauthmoshi
 
-import com.halcyonmobile.oauth.OauthRetrofitContainer
-import com.halcyonmobile.oauth.OauthRetrofitContainerBuilder
 import com.halcyonmobile.oauth.dependencies.AuthenticationLocalStorage
 import com.halcyonmobile.oauth.dependencies.IsSessionExpiredException
 import com.halcyonmobile.oauth.dependencies.SessionExpiredEventHandler
@@ -25,11 +23,13 @@ import com.halcyonmobile.oauthparsing.AuthenticationServiceAdapterImpl
 import com.halcyonmobile.oauthparsing.OauthRetrofitWithParserContainerBuilder
 import com.halcyonmobile.oauthparsing.RefreshServiceFieldParameterProvider
 import com.halcyonmobile.oauthparsing.RefreshTokenService
+import com.odogwudev.example.network_implementation.utils.oauth.OauthRetrofitContainerBuilder
+import com.odogwudev.example.network_implementation.utils.oauth.OauthRetrofitContainer
 import com.squareup.moshi.Moshi
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import com.halcyonmobile.oauth.IsSessionExpiredException as DeprecatedIsSessionExpiredException
+import com.odogwudev.example.network_implementation.utils.oauth.IsSessionExpiredException as DeprecatedIsSessionExpiredException
 
 /**
  * Builder class for [OauthRetrofitContainer] which uses moshi as it's [retrofit2.Converter.Factory].

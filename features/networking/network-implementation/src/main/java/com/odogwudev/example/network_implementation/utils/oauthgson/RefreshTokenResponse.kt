@@ -17,7 +17,7 @@
 package com.halcyonmobile.oauthgson
 
 import com.google.gson.annotations.SerializedName
-import com.halcyonmobile.oauth.SessionDataResponse
+import com.odogwudev.example.network_implementation.utils.oauth.SessionDataResponse
 
 /**
  * Default model implementing [SessionDataResponse].

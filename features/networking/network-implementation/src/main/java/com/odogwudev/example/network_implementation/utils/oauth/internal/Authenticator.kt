@@ -16,15 +16,10 @@
  */
 package com.odogwudev.example.network_implementation.utils.oauth.internal
 
-import com.halcyonmobile.oauth.AuthenticationService
-import com.halcyonmobile.oauth.INVALIDATION_AFTER_REFRESH_HEADER_NAME
-import com.halcyonmobile.oauth.INVALIDATION_AFTER_REFRESH_HEADER_VALUE
-import com.halcyonmobile.oauth.SessionDataResponse
-import com.halcyonmobile.oauth.authFinishedInvalidationException
 import com.halcyonmobile.oauth.dependencies.AuthenticationLocalStorage
 import com.halcyonmobile.oauth.dependencies.IsSessionExpiredException
 import com.halcyonmobile.oauth.dependencies.SessionExpiredEventHandler
-import com.halcyonmobile.oauth.save
+import com.odogwudev.example.network_implementation.utils.oauth.*
 import java.io.IOException
 import okhttp3.Authenticator
 import okhttp3.Request
@@ -65,7 +60,9 @@ internal class Authenticator(
 
             repeat(REFRESH_TOKEN_RETRY_COUNT) {
                 try {
-                    val refreshTokenResponse = refreshTokenService.refreshToken(authenticationLocalStorage.refreshToken).execute()
+                    val refreshTokenResponse =
+                        refreshTokenService.refreshToken(authenticationLocalStorage.refreshToken)
+                            .execute()
                     val sessionDataResponse: SessionDataResponse? = refreshTokenResponse.body()
                     if (refreshTokenResponse.isSuccessful && sessionDataResponse != null) {
                         authenticationLocalStorage.save(sessionDataResponse)

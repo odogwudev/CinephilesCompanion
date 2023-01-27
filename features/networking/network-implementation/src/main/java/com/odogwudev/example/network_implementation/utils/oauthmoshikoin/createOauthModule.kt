@@ -19,9 +19,9 @@ package com.halcyonmobile.oauthmoshikoin
 import com.halcyonmobile.oauth.dependencies.AuthenticationLocalStorage
 import com.halcyonmobile.oauth.dependencies.IsSessionExpiredException
 import com.halcyonmobile.oauth.dependencies.SessionExpiredEventHandler
-import com.halcyonmobile.oauthmoshi.OauthRetrofitContainerWithMoshi
-import com.halcyonmobile.oauthmoshi.OauthRetrofitWithMoshiContainerBuilder
 import com.halcyonmobile.oauthparsing.RefreshServiceFieldParameterProvider
+import com.odogwudev.example.network_implementation.utils.oauthmoshi.OauthRetrofitWithMoshiContainerBuilder
+import com.odogwudev.example.network_implementation.utils.oauthmoshi.OauthRetrofitContainerWithMoshi
 import com.squareup.moshi.Moshi
 import okhttp3.OkHttpClient
 import org.koin.core.module.Module

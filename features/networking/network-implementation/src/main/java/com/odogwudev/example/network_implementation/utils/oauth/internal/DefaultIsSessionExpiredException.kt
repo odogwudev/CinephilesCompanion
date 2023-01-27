@@ -16,8 +16,8 @@
  */
 package com.odogwudev.example.network_implementation.utils.oauth.internal
 
-import com.halcyonmobile.oauth.causeHttpException
 import com.halcyonmobile.oauth.dependencies.IsSessionExpiredException
+import com.odogwudev.example.network_implementation.utils.oauth.causeHttpException
 import retrofit2.HttpException
 import java.net.HttpURLConnection
 

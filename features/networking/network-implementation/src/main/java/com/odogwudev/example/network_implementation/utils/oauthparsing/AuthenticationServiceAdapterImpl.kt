@@ -16,9 +16,9 @@
  */
 package com.halcyonmobile.oauthparsing
 
-import com.halcyonmobile.oauth.AuthenticationService
-import com.halcyonmobile.oauth.AuthenticationServiceAdapter
-import com.halcyonmobile.oauth.SessionDataResponse
+import com.odogwudev.example.network_implementation.utils.oauth.AuthenticationServiceAdapter
+import com.odogwudev.example.network_implementation.utils.oauth.AuthenticationService
+import com.odogwudev.example.network_implementation.utils.oauth.SessionDataResponse
 import retrofit2.Call
 
 /**

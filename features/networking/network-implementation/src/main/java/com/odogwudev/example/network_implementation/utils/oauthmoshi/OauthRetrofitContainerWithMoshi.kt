@@ -16,7 +16,6 @@
  */
 package com.odogwudev.example.network_implementation.utils.oauthmoshi
 
-import com.halcyonmobile.oauth.OauthRetrofitContainer
 import com.halcyonmobile.oauthparsing.OauthRetrofitContainerWithParser
 import com.odogwudev.example.network_implementation.utils.oauth.OauthRetrofitContainer
 import com.squareup.moshi.Moshi

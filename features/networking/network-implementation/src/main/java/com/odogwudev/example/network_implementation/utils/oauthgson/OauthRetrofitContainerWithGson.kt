@@ -17,8 +17,8 @@
 package com.halcyonmobile.oauthgson
 
 import com.google.gson.Gson
-import com.halcyonmobile.oauth.OauthRetrofitContainer
 import com.halcyonmobile.oauthparsing.OauthRetrofitContainerWithParser
+import com.odogwudev.example.network_implementation.utils.oauth.OauthRetrofitContainer
 
 class OauthRetrofitContainerWithGson(
     override val oauthRetrofitContainer: OauthRetrofitContainer,

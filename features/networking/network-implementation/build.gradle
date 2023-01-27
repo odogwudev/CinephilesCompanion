@@ -9,9 +9,34 @@ java {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "com.google.code.gson:gson:2.10"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'androidx.security:security-crypto-ktx:1.1.0-alpha04'
+
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
+    testImplementation "com.squareup.okhttp3:mockwebserver:4.9.3"
     implementation(libs.square.retrofit)
     implementation(libs.koin.core)
     implementation(libs.square.moshi)
     implementation(project(":features:networking:network-api"))
-
+    implementation "androidx.annotation:annotation:1.5.0"
+    implementation "com.squareup:kotlinpoet:1.12.0"
+    implementation "com.squareup.okio:okio:3.0.0"
+    api  ("com.squareup.okhttp3:okhttp:5.0.0-alpha.3") {
+        exclude module: 'okio'
+    }
+    api ("com.squareup.retrofit2:retrofit:2.9.0") {
+        exclude module: 'okhttp'
+    }
+    api "com.squareup.moshi:moshi:1.14.0"
+    api("com.squareup.retrofit2:converter-moshi:2.9.0") {
+        exclude module: 'okhttp'
+        exclude module: 'moshi'
+    }
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.13.0"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
+    testImplementation "com.squareup.okhttp3:mockwebserver:4.9.3"
+    implementation "androidx.security:security-crypto:1.0.0"
 }

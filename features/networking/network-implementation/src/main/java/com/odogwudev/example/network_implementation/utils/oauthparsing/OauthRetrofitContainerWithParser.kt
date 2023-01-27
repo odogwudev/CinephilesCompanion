@@ -16,7 +16,7 @@
  */
 package com.halcyonmobile.oauthparsing
 
-import com.halcyonmobile.oauth.OauthRetrofitContainer
+import com.odogwudev.example.network_implementation.utils.oauth.OauthRetrofitContainer
 
 /**
  * Interface defining OauthRetrofitContainers which can also do parsing for [RefreshTokenService]'s response.

@@ -16,15 +16,15 @@
  */
 package com.odogwudev.example.network_implementation.utils.oauth
 
-import com.halcyonmobile.oauth.IsSessionExpiredException as DeprecatedIsSessionExpiredException
+import com.odogwudev.example.network_implementation.utils.oauth.IsSessionExpiredException as DeprecatedIsSessionExpiredException
 import com.halcyonmobile.oauth.dependencies.AuthenticationLocalStorage
 import com.halcyonmobile.oauth.dependencies.IsSessionExpiredException
 import com.halcyonmobile.oauth.dependencies.SessionExpiredEventHandler
-import com.halcyonmobile.oauth.internal.AuthenticationHeaderInterceptor
-import com.halcyonmobile.oauth.internal.Authenticator
-import com.halcyonmobile.oauth.internal.ClientIdParameterInterceptor
-import com.halcyonmobile.oauth.internal.DefaultIsSessionExpiredException
-import com.halcyonmobile.oauth.internal.SetAuthorizationHeaderUseCase
+import com.odogwudev.example.network_implementation.utils.oauth.internal.*
+import com.odogwudev.example.network_implementation.utils.oauth.internal.AuthenticationHeaderInterceptor
+import com.odogwudev.example.network_implementation.utils.oauth.internal.Authenticator
+import com.odogwudev.example.network_implementation.utils.oauth.internal.ClientIdParameterInterceptor
+import com.odogwudev.example.network_implementation.utils.oauth.internal.SetAuthorizationHeaderUseCase
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import kotlin.reflect.KClass

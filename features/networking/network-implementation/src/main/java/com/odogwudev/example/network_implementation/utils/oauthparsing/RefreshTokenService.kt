@@ -16,8 +16,8 @@
  */
 package com.halcyonmobile.oauthparsing
 
-import com.halcyonmobile.oauth.SessionDataResponse
 import com.halcyonmobile.oauth.dependencies.RefreshService
+import com.odogwudev.example.network_implementation.utils.oauth.SessionDataResponse
 import retrofit2.Call
 import retrofit2.http.FieldMap
 import retrofit2.http.FormUrlEncoded
