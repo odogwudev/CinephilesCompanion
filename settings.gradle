@@ -24,6 +24,7 @@ dependencyResolutionManagement {
         maven { url = uri("https://jitpack.io") }
     }
 }
+
 rootProject.name = "Cinephile's Companion"
 include ':app'
 include ':core-ui'
@@ -43,3 +44,9 @@ include ':features:networking'
 include ':features:networking:network-api'
 include ':features:networking:networking-di'
 include ':features:networking:network-implementation'
+include ':domain:domain-model'
+include ':features:models:movie:movie-api'
+include ':features:models:movie:movie-di'
+include ':features:models:movie:movie-di'
+include ':features:models:movie:movie-implementation'
+include ':features:content'
