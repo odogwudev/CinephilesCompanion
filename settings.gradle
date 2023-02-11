@@ -10,21 +10,11 @@ dependencyResolutionManagement {
     enableFeaturePreview("VERSION_CATALOGS")
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        maven {
-            url = uri("https://maven.pkg.github.com/halcyonmobile/*")
-            credentials {
-                username = System.getenv("GITHUB_USERNAME")
-                password = System.getenv("GITHUB_TOKEN")
-//                username = extra.properties["GITHUB_USERNAME"] as String? ?: System.getenv("GITHUB_USERNAME")
-//                password = extra.properties["GITHUB_TOKEN"] as String? ?: System.getenv("GITHUB_TOKEN")
-            }
-        }
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
     }
 }
-
 rootProject.name = "Cinephile's Companion"
 include ':app'
 include ':core-ui'
@@ -50,3 +40,7 @@ include ':features:models:movie:movie-di'
 include ':features:models:movie:movie-di'
 include ':features:models:movie:movie-implementation'
 include ':features:content'
+include ':features:pagination'
+include ':features:pagination:pagination-api'
+include ':features:pagination:pagination-di'
+include ':features:pagination:pagination-implementation'

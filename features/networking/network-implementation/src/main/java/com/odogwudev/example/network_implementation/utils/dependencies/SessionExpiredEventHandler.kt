@@ -24,6 +24,7 @@ import androidx.annotation.WorkerThread
  *
  * When this method is called the [AuthenticationLocalStorage] is already cleared.
  */
+
 interface SessionExpiredEventHandler {
 
     @WorkerThread

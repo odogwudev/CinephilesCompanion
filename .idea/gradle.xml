@@ -33,6 +33,10 @@
             <option value="$PROJECT_DIR$/features/networking/network-api" />
             <option value="$PROJECT_DIR$/features/networking/network-implementation" />
             <option value="$PROJECT_DIR$/features/networking/networking-di" />
+            <option value="$PROJECT_DIR$/features/pagination" />
+            <option value="$PROJECT_DIR$/features/pagination/pagination-api" />
+            <option value="$PROJECT_DIR$/features/pagination/pagination-di" />
+            <option value="$PROJECT_DIR$/features/pagination/pagination-implementation" />
           </set>
         </option>
       </GradleProjectSettings>
