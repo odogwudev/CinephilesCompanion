@@ -22,6 +22,10 @@
             <option value="$PROJECT_DIR$/domain" />
             <option value="$PROJECT_DIR$/domain/domain-model" />
             <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/activityprovider" />
+            <option value="$PROJECT_DIR$/features/activityprovider/api" />
+            <option value="$PROJECT_DIR$/features/activityprovider/di" />
+            <option value="$PROJECT_DIR$/features/activityprovider/implementation" />
             <option value="$PROJECT_DIR$/features/content" />
             <option value="$PROJECT_DIR$/features/explore" />
             <option value="$PROJECT_DIR$/features/models" />
