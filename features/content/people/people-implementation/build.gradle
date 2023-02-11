@@ -1,0 +1,21 @@
+plugins {
+    alias libs.plugins.kotlin.jvm
+    alias libs.plugins.kotlin.kapt
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+dependencies {
+    implementation(libs.square.retrofit)
+    implementation(libs.square.moshi)
+    kapt(libs.square.moshiCodegen)
+    implementation(libs.kotlinx.coroutines)
+
+    implementation(project(":features:networking:network-api"))
+    implementation(project(":features:content:people:people-api"))
+    implementation(project(":features:content:model:people"))
+    implementation(project(":features:pagination:pagination-api"))
+}

@@ -35,6 +35,10 @@
             <option value="$PROJECT_DIR$/features/content/movies/movie-api" />
             <option value="$PROJECT_DIR$/features/content/movies/movie-di" />
             <option value="$PROJECT_DIR$/features/content/movies/movie-implementation" />
+            <option value="$PROJECT_DIR$/features/content/people" />
+            <option value="$PROJECT_DIR$/features/content/people/people-api" />
+            <option value="$PROJECT_DIR$/features/content/people/people-di" />
+            <option value="$PROJECT_DIR$/features/content/people/people-implementation" />
             <option value="$PROJECT_DIR$/features/explore" />
             <option value="$PROJECT_DIR$/features/models" />
             <option value="$PROJECT_DIR$/features/models/movie" />
