@@ -1,0 +1,17 @@
+plugins {
+    alias libs.plugins.kotlin.jvm
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+dependencies {
+
+    implementation(project(":features:content:model:movie"))
+    implementation(project(":features:content:model:tv"))
+    implementation(project(":features:pagination:pagination-api"))
+
+    implementation(libs.kotlinx.coroutines)
+}

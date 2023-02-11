@@ -27,6 +27,10 @@
             <option value="$PROJECT_DIR$/features/activityprovider/di" />
             <option value="$PROJECT_DIR$/features/activityprovider/implementation" />
             <option value="$PROJECT_DIR$/features/content" />
+            <option value="$PROJECT_DIR$/features/content/explore" />
+            <option value="$PROJECT_DIR$/features/content/explore/explore-api" />
+            <option value="$PROJECT_DIR$/features/content/explore/explore-di" />
+            <option value="$PROJECT_DIR$/features/content/explore/explore-implementation" />
             <option value="$PROJECT_DIR$/features/content/model" />
             <option value="$PROJECT_DIR$/features/content/model/movie" />
             <option value="$PROJECT_DIR$/features/content/model/people" />
