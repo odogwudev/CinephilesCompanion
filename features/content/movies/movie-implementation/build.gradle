@@ -12,7 +12,11 @@ dependencies {
     implementation(libs.square.retrofit)
     implementation(libs.square.moshi)
     kapt(libs.square.moshiCodegen)
+    implementation(libs.kotlinx.coroutines)
+
 
     implementation(project(":features:networking:network-api"))
+    implementation(project(":features:content:movies:movie-api"))
+    implementation(project(":features:content:model:movie"))
     implementation(project(":features:pagination:pagination-api"))
 }

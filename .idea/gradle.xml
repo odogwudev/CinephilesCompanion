@@ -28,6 +28,13 @@
             <option value="$PROJECT_DIR$/features/activityprovider/implementation" />
             <option value="$PROJECT_DIR$/features/content" />
             <option value="$PROJECT_DIR$/features/content/model" />
+            <option value="$PROJECT_DIR$/features/content/model/movie" />
+            <option value="$PROJECT_DIR$/features/content/model/people" />
+            <option value="$PROJECT_DIR$/features/content/model/tv" />
+            <option value="$PROJECT_DIR$/features/content/movies" />
+            <option value="$PROJECT_DIR$/features/content/movies/movie-api" />
+            <option value="$PROJECT_DIR$/features/content/movies/movie-di" />
+            <option value="$PROJECT_DIR$/features/content/movies/movie-implementation" />
             <option value="$PROJECT_DIR$/features/explore" />
             <option value="$PROJECT_DIR$/features/models" />
             <option value="$PROJECT_DIR$/features/models/movie" />
