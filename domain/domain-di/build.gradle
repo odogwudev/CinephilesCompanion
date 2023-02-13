@@ -1,0 +1,45 @@
+plugins {
+    alias libs.plugins.android.library
+    alias libs.plugins.kotlin.android
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation(project(":domain:domain-usecase"))
+
+    implementation(project(":features:content:explore:explore-di"))
+    implementation(project(":features:content:explore:explore-api"))
+    implementation(project(":features:content:movies:movie-di"))
+    implementation(project(":features:content:movies:movie-api"))
+    implementation(project(":features:content:people:people-di"))
+    implementation(project(":features:content:people:people-api"))
+    implementation(project(":features:auth:firebase:firebase-api"))
+    implementation(project(":features:auth:firebase:firebase-di"))
+
+    implementation(libs.koin.core)
+}
