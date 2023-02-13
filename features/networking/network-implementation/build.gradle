@@ -7,7 +7,16 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_7
     targetCompatibility = JavaVersion.VERSION_1_7
 }
-
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = 1.8
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = 1.8
+    }
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -18,6 +27,7 @@ dependencies {
     implementation(libs.square.retrofit)
     implementation(libs.koin.core)
     implementation(libs.square.moshi)
+    implementation(libs.kotlinx.coroutines)
     // AndroidX
     implementation(project(":features:networking:network-api"))
     //implementation 'androidx.annotation:annotation:1.5.0'
@@ -46,4 +56,17 @@ dependencies {
 //    }
 
 //implementation "com.squareup.okhttp3:okhttp:4.10.0"
+//annotationVersion = "1.3.0"
+//appCompatVersion = "1.3.1"
+//coroutinesVersion = "1.6.0"
+//gsonVersion = "2.8.9"
+//junitVersion = "4.13.2"
+//koinVersion = "3.1.5"
+//kotlinVersion = "1.6.10"
+//kotlinPoetVersion = "1.10.2"
+//moshiVersion = "1.13.0"
+//okHttpVersion = "4.9.3"
+//okioVersion = "2.10.0"
+//retrofitVersion = "2.9.0"
+//securityVersion = "1.0.0"
 //implementation "com.squareup:kotlinpoet:1.12.0"

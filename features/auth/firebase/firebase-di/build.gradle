@@ -20,12 +20,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    buildFeatures {
-        compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion libs.versions.androidx.composeCompiler.get()
-    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -36,11 +30,11 @@ android {
 }
 
 dependencies {
-    implementation(libs.bundles.androidx.compose)
-    implementation project(path: ':features:networking:network-implementation')
+    implementation(project(":features:auth:firebase:firebase-api"))
+    implementation(project(":features:auth:firebase:firebase-implementation"))
+    implementation(project(":features:activityprovider:api"))
 
-    releaseImplementation(libs.beagle.noop)
-    debugImplementation(libs.beagle.uiDrawer)
+    implementation(libs.koin.core)
 
     implementation(libs.bundles.androidx.core)
     implementation(libs.androidx.appcompat)

@@ -8,8 +8,8 @@ java {
 }
 
 dependencies {
-    implementation(project(":features:content:model:movie"))
-    implementation(project(":features:content:model:tv"))
-    implementation(project(":features:content:model:people"))
     implementation(project(":features:pagination:pagination-api"))
+
+    implementation(libs.koin.core)
+    implementation(libs.kotlinx.coroutines)
 }
