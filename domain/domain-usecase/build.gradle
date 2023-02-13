@@ -44,8 +44,9 @@ dependencies {
     implementation(project(":features:content:movies:movie-di"))
     implementation(project(":features:content:people:people-api"))
     implementation(project(":features:content:people:people-di"))
-//    implementation(project(":features:auth:firebase:firebase-api"))
-  //  implementation(project(":features:auth:firebase:firebase-di"))
+
+    implementation(project(":features:auth:firebase:firebase-api"))
+   implementation(project(":features:auth:firebase:firebase-di"))
 
     implementation(libs.koin.core)
     implementation(libs.kotlinx.coroutines)

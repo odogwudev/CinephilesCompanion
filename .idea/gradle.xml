@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/core-ui/theme" />
             <option value="$PROJECT_DIR$/core-ui/utils" />
             <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/domain/domain-di" />
             <option value="$PROJECT_DIR$/domain/domain-model" />
             <option value="$PROJECT_DIR$/domain/domain-usecase" />
             <option value="$PROJECT_DIR$/domain/domain-util" />

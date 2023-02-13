@@ -19,6 +19,8 @@ sealed class ContentItem {
         val releaseDate: String
     ) : ContentItem()
 
+
+
     data class Person(
         override val id: String,
         val name: String,
