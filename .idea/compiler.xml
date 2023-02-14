@@ -13,6 +13,8 @@
         <module name="Cinephile's_Companion.features.networking.network-implementation.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="Cinephile's_Companion.core-ui.screens.mains" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
