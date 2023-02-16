@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core-ui" />
+            <option value="$PROJECT_DIR$/core-ui/catalog" />
             <option value="$PROJECT_DIR$/core-ui/screens" />
             <option value="$PROJECT_DIR$/core-ui/screens/auth" />
             <option value="$PROJECT_DIR$/core-ui/screens/auth/loginn-register" />
