@@ -1,4 +1,4 @@
-package com.barabasizsolt.favourites
+package com.odogwudev.example.favorites
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

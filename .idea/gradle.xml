@@ -25,6 +25,7 @@
             <option value="$PROJECT_DIR$/core-ui/screens/main/favorites" />
             <option value="$PROJECT_DIR$/core-ui/screens/main/home" />
             <option value="$PROJECT_DIR$/core-ui/screens/main/profile" />
+            <option value="$PROJECT_DIR$/core-ui/screens/main/seeall" />
             <option value="$PROJECT_DIR$/core-ui/theme" />
             <option value="$PROJECT_DIR$/core-ui/utils" />
             <option value="$PROJECT_DIR$/domain" />
