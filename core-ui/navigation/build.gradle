@@ -36,19 +36,19 @@ android {
 }
 
 dependencies {
-    implementation(project(":ui:screen:auth:welcome"))
-    implementation implementation(project(':ui:screen:auth:login-register'))
-    implementation(project(":ui:screen:main:base"))
-    implementation(project(":ui:screen:main:home"))
-    implementation(project(":ui:screen:main:explore"))
-    implementation(project(":ui:screen:main:favourites"))
-    implementation(project(":ui:screen:main:profile"))
-    implementation(project(":ui:screen:main:seeall"))
+    implementation(project(":core-ui:screens:auth:welcome"))
+    implementation implementation(project(':core-ui:screens:auth:login-register'))
+    implementation(project(":core-ui:screens:main:base"))
+    //implementation(project(":core-ui:screens:main:home"))
+    //implementation(project(":core-ui:screens:main:explore"))
+    //implementation(project(":core-ui:screens:main:favourites"))
+    //implementation(project(":core-ui:screens:main:profile"))
+    //implementation(project(":core-ui:screens:main:seeall"))
 
-    implementation(project(":ui:theme"))
-    implementation(project(":ui:util"))
+    implementation(project(":core-ui:theme"))
+    implementation(project(":core-ui:utils"))
     implementation(project(":domain:domain-usecase"))
-    implementation(project(":service:auth:firebase:firebase-api"))
+    implementation(project(":features:auth:firebase:firebase-api"))
 
     implementation(libs.bundles.androidx.compose)
     implementation(libs.bundles.voyager)

@@ -36,6 +36,11 @@ android {
 }
 
 dependencies {
+    implementation(project(":core-ui:catalog"))
+    implementation(project(":core-ui:theme"))
+    implementation(project(":core-ui:utils"))
+    implementation(project(":domain:domain-usecase"))
+    implementation(project(":features:auth:firebase:firebase-api"))
 
     implementation(libs.bundles.voyager)
     implementation(libs.bundles.androidx.compose)

@@ -13,11 +13,15 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core-ui" />
             <option value="$PROJECT_DIR$/core-ui/catalog" />
+            <option value="$PROJECT_DIR$/core-ui/navigation" />
             <option value="$PROJECT_DIR$/core-ui/screens" />
             <option value="$PROJECT_DIR$/core-ui/screens/auth" />
+            <option value="$PROJECT_DIR$/core-ui/screens/auth/login-register" />
             <option value="$PROJECT_DIR$/core-ui/screens/auth/loginn-register" />
             <option value="$PROJECT_DIR$/core-ui/screens/auth/welcome" />
             <option value="$PROJECT_DIR$/core-ui/screens/main" />
+            <option value="$PROJECT_DIR$/core-ui/screens/main/base" />
+            <option value="$PROJECT_DIR$/core-ui/screens/main/explore" />
             <option value="$PROJECT_DIR$/core-ui/theme" />
             <option value="$PROJECT_DIR$/core-ui/utils" />
             <option value="$PROJECT_DIR$/domain" />
