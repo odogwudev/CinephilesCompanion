@@ -9,13 +9,14 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.google.accompanist.swiperefresh.SwipeRefresh
-import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 import com.odogwudev.example.catalog.ErrorContent
 import com.odogwudev.example.catalog.LoadingContent
 import com.odogwudev.example.catalog.MovaSnackBar
 import com.odogwudev.example.theme.AppTheme
 import com.odogwudev.example.utils.R
+import com.google.accompanist.swiperefresh.SwipeRefresh
+import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
+
 
 @Composable
 fun BaseScreen(
