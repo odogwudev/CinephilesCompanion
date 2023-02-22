@@ -7,13 +7,11 @@ import androidx.activity.compose.setContent
 import androidx.compose.ui.graphics.Color
 import androidx.core.view.WindowCompat
 import androidx.fragment.app.FragmentActivity
-import com.barabasizsolt.activityprovider.api.ActivitySetter
-import com.barabasizsolt.api.AuthenticationService
-import com.odogwudev.example.navigation.appNav.AppNavigation
-import com.barabasizsolt.theme.MovaTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.odogwudev.example.api.ActivitySetter
 import com.odogwudev.example.firebase_api.AuthenticationService
+import com.odogwudev.example.navigation.appNav.AppNavigation
+import com.odogwudev.example.theme.CinephilesCompanionTheme
 import com.pandulapeter.beagle.Beagle
 import org.koin.android.ext.android.inject
 
@@ -27,7 +25,7 @@ class MainActivity : FragmentActivity() {
 
         WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
-            MovaTheme {
+            CinephilesCompanionTheme {
                 val systemUiController = rememberSystemUiController()
                 systemUiController.setStatusBarColor(color = Color.Transparent, darkIcons = false)
                 systemUiController.setNavigationBarColor(color = Color.Transparent, darkIcons = false)
