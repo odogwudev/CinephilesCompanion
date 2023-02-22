@@ -31,14 +31,13 @@ android {
 
 dependencies {
     implementation(libs.koin.core)
-    implementation(libs.halcyon.oauthStorage)
+
     implementation(libs.androidx.security)
 
     implementation(libs.bundles.androidx.core)
     implementation(libs.androidx.appcompat)
     implementation(libs.google.android.material)
-    implementation(project(":features:networking:network-implementation"))
-    implementation project(path: ':app')
+    implementation project(path: ':features:networking:network-implementation')
     implementation project(path: ':core-ui:utils')
     testImplementation(libs.test.junit4)
     androidTestImplementation(libs.bundles.test.android)

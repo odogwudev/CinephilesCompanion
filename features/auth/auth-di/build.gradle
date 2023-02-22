@@ -33,6 +33,7 @@ dependencies {
     implementation(project(":features:auth:auth-implementation"))
 
     implementation(libs.koin.core)
-    implementation(libs.halcyon.oauthStorage)
     implementation project(path: ':features:networking:network-implementation')
+    implementation project(path: ':features:networking:network-implementation')
+    //implementation(libs.halcyon.oauthStorage)
 }

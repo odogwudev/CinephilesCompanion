@@ -68,8 +68,18 @@ android {
         }
     }
 }
-
 dependencies {
+    implementation(project(":core-ui:navigation"))
+    implementation(project(":core-ui:theme"))
+    implementation(project(":domain:domain-di"))
+    implementation(project(":domain:domain-usecase"))
+    implementation(project(":features:networking:networking-di"))
+    implementation(project(":features:auth:auth-di"))
+    implementation(project(":features:auth:firebase:firebase-api"))
+    implementation(project(":features:activityprovider:api"))
+    implementation(project(":features:activityprovider:di"))
+    implementation(project(":features:pagination:pagination-api"))
+    implementation(project(":features:pagination:pagination-di"))
 
     // Kotlin
     implementation(libs.kotlinx.coroutines)
@@ -100,7 +110,6 @@ dependencies {
 
     // State Machine
     implementation(libs.statemachine)
-    implementation project(path: ':features:networking:network-implementation')
 
     // Test libraries
     testImplementation(libs.test.junit4)

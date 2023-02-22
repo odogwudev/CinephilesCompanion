@@ -1,7 +1,12 @@
 package com.odogwudev.example.catalog
 
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Card
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -12,7 +17,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.odogwudev.example.theme.AppTheme
-import fake.`package`.name.`for`.sync.R
 
 @Composable
 fun ErrorItem(modifier: Modifier = Modifier, onRetryClick: () -> Unit) = Card(

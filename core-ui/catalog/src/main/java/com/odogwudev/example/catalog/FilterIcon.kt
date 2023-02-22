@@ -12,7 +12,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.odogwudev.example.theme.AppTheme
-import fake.`package`.name.`for`.sync.R
 
 @Composable
 fun FilterIcon(
