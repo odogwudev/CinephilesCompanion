@@ -14,11 +14,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.barabasizsolt.util.ImageType
-import com.barabasizsolt.util.withShadow
 import com.odogwudev.example.domain_model.ContentItem
 import com.odogwudev.example.theme.AppTheme
+import com.odogwudev.example.utils.ImageType
 import com.odogwudev.example.utils.getImageKey
+import com.odogwudev.example.utils.withShadow
 
 @Composable
 fun MediumPersonCard(

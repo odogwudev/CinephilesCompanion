@@ -12,9 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
-import com.barabasizsolt.util.ImageType
 import com.odogwudev.example.domain_model.ContentItem
 import com.odogwudev.example.theme.AppTheme
+import com.odogwudev.example.utils.ImageType
 import com.odogwudev.example.utils.getImageKey
 
 @Composable

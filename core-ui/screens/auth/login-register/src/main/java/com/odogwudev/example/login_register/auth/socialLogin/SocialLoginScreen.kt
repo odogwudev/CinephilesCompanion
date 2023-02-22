@@ -26,7 +26,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.insets.statusBarsPadding
 import com.odogwudev.example.catalog.*
-import com.odogwudev.example.`login-register`.R
+import com.odogwudev.example.login.R
 import com.odogwudev.example.theme.AppTheme
 
 @Composable

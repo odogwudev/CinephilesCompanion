@@ -11,16 +11,6 @@
 
     <string name="all_content">All Content</string>
 
-    <string name="snackbar_error_message">Sorry, an error occurred.</string>
+    <string name="snackbar_error_message">Oops, something went wrong.</string>
     <string name="snackbar_action_label">Try again</string>
-
-    <string name="featured_movies">Featured Movies</string>
-    <string name="more_featured_movies">More Featured Movies</string>
-    <string name="celebrities">Celebrities</string>
-    <string name="more_celebrities">More Celebrities</string>
-    <string name="current_releases">Current Releases</string>
-    <string name="more_current_releases">More Current Releases</string>
-    <string name="highest_rated_movies">Highest Rated Movies</string>
-    <string name="more_highest_rated_movies">More Highest Rated Movies</string>
-
 </resources>
