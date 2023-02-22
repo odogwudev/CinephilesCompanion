@@ -1,42 +1,65 @@
 package com.odogwudev.example.cinephilescompanion
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import android.view.KeyEvent
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.odogwudev.example.cinephilescompanion.ui.theme.CinephilesCompanionTheme
+import androidx.compose.ui.graphics.Color
+import androidx.core.view.WindowCompat
+import androidx.fragment.app.FragmentActivity
+import com.barabasizsolt.activityprovider.api.ActivitySetter
+import com.barabasizsolt.api.AuthenticationService
+import com.odogwudev.example.navigation.appNav.AppNavigation
+import com.barabasizsolt.theme.MovaTheme
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.odogwudev.example.api.ActivitySetter
+import com.odogwudev.example.firebase_api.AuthenticationService
+import com.pandulapeter.beagle.Beagle
+import org.koin.android.ext.android.inject
 
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity() {
+
+    private val activitySetter by inject<ActivitySetter>()
+    private val authService by inject<AuthenticationService>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
-            CinephilesCompanionTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
+            MovaTheme {
+                val systemUiController = rememberSystemUiController()
+                systemUiController.setStatusBarColor(color = Color.Transparent, darkIcons = false)
+                systemUiController.setNavigationBarColor(color = Color.Transparent, darkIcons = false)
+                AppNavigation()
             }
         }
     }
-}
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
+    override fun onResume() {
+        super.onResume()
+        activitySetter.set(this)
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    CinephilesCompanionTheme {
-        Greeting("Android")
+    override fun onDestroy() {
+        super.onDestroy()
+        activitySetter.clear()
+    }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        authService.registerFacebookCallbackManager(requestCode = requestCode, resultCode =resultCode, data = data)
+    }
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean = when {
+        handleDebugAction(keyCode = keyCode) -> true
+        else -> super.onKeyDown(keyCode, event)
+    }
+
+    private fun handleDebugAction(keyCode: Int): Boolean = when {
+        (BuildConfig.BUILD_TYPE == "debug") && keyCode == KeyEvent.KEYCODE_VOLUME_DOWN -> Beagle.show()
+        (BuildConfig.BUILD_TYPE == "debug") && keyCode == KeyEvent.KEYCODE_VOLUME_UP -> Beagle.hide()
+        else -> false
     }
 }
